@@ -33,16 +33,81 @@
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-		<dependency>
+		 <dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
 			<scope>runtime</scope>
-		</dependency>
+		</dependency> 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		
+		<dependency>
+  <groupId>org.springframework.plugin</groupId>
+  <artifactId>spring-plugin-core</artifactId>
+  <version>0.8.0.RELEASE</version>
+</dependency>
+		
+
+		
+		
+		
+		
+		<dependency>
+
+    <groupId>io.springfox</groupId>
+
+    <artifactId>springfox-swagger2</artifactId>
+
+    <version>2.6.1</version>
+
+    <scope>compile</scope>
+
+</dependency>
+
+
+<dependency>
+
+    <groupId>io.springfox</groupId>
+
+    <artifactId>springfox-swagger-ui</artifactId>
+
+    <version>2.6.1</version>
+
+    <scope>compile</scope>
+
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.liquibase/liquibase-core -->
+<!-- <dependency>
+    <groupId>org.liquibase</groupId>
+    <artifactId>liquibase-core</artifactId>
+    <version>3.6.1</version>
+</dependency> -->
+
+    <!-- <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <version>5.1.15-bin</version>$NO-MVN-MAN-VER$
+    </dependency> -->
+
+<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+<!-- <dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.15</version>
+</dependency> -->
+ 	 
+
+		<!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui -->
+<!-- <dependency>
+    <groupId>io.springfox</groupId>
+    <artifactId>springfox-swagger-ui</artifactId>
+    <version>2.9.2</version>
+</dependency> -->
+
 
 		
 	</dependencies>

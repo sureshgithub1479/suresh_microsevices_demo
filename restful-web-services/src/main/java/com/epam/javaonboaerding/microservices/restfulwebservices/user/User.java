@@ -5,7 +5,13 @@ import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.Past;
+import javax.validation.constraints.Size;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+@ApiModel(description= "All detils of user")
 @Entity
 public class User {
 	
@@ -13,8 +19,13 @@ public class User {
 	@GeneratedValue
 	private Integer id;
 	
+	
+	@ApiModelProperty(notes="Name should have atlease 2 characters")
+	@Size(min=2,message = "Name should have atlease 2 characters")
 	private String name;
 	
+	@ApiModelProperty(notes="Birthdate should be in the past")
+	@Past
 	private Date birthdate;
 
 	protected User(){

@@ -46,4 +46,28 @@ public class UserDaoService {
 		return null;
 		
 	}
+	
+	
+public User deleteById(int id) {
+	
+/*	users.forEach(user-> {
+		if(user.getId().equals(id)) {
+			users.remove(id);
+			return ;}
+		
+		});*/
+		
+	
+		
+		for(User user :users)
+		{
+			if(user.getId() == id) {
+				return users.remove(id);
+			}
+		}
+		return null;
+		
+	
+}
+
 }
